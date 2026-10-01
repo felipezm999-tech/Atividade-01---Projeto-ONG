@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se para conhecer as oportunidades de participação e voluntariado da ONG Raízes.">
+    <title>Cadastro | ONG Raízes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="ONG Raízes, página inicial"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a>
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos sociais</a>
+            <a class="nav-cta" href="cadastro.html" aria-current="page">Quero participar <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="registration-main">
+        <section class="registration-intro" aria-labelledby="registration-title">
+            <figure class="registration-image">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=85" alt="Pessoas reunidas em uma atividade colaborativa">
+                <figcaption>Há muitas formas de fazer parte.</figcaption>
+            </figure>
+            <div class="registration-heading">
+                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Vamos nos conhecer</p>
+                <h1 id="registration-title">Sua presença pode <em>mudar histórias.</em></h1>
+                <p>Conte um pouco sobre você. Vamos manter seus dados organizados para dar continuidade à conversa.</p>
+            </div>
+        </section>
+
+        <section class="form-section page-width" aria-labelledby="form-title">
+            <div class="form-heading"><div><p class="section-label"><span>01</span> Cadastro de participante</p><h2 id="form-title">Seus dados</h2></div><p>Campos com <span aria-hidden="true">*</span> são obrigatórios.</p></div>
+            <form id="registration-form" class="registration-form">
+                <fieldset class="form-group">
+                    <legend><span class="fieldset-number">01</span> Identificação</legend>
+                    <div class="field-grid">
+                        <div class="field field-wide"><label for="full-name">Nome completo <span aria-hidden="true">*</span></label><input id="full-name" name="nome" type="text" autocomplete="name" placeholder="Como podemos chamar você?" minlength="3" maxlength="100" pattern=".*\s+.*" title="Informe seu nome e sobrenome." required></div>
+                        <div class="field"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" maxlength="254" required></div>
+                        <div class="field"><label for="cpf">CPF <span aria-hidden="true">*</span></label><input id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato 000.000.000-00." data-mask="cpf" required></div>
+                        <div class="field"><label for="birth-date">Data de nascimento <span aria-hidden="true">*</span></label><input id="birth-date" name="data-nascimento" type="date" autocomplete="bday" required></div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend><span class="fieldset-number">02</span> Contato</legend>
+                    <div class="field-grid">
+                        <div class="field"><label for="phone">Telefone <span aria-hidden="true">*</span></label><input id="phone" name="telefone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="(00) 00000-0000" maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Digite o telefone no formato (00) 00000-0000." data-mask="phone" required></div>
+                        <div class="field"><label for="address">Endereço <span aria-hidden="true">*</span></label><input id="address" name="endereco" type="text" autocomplete="street-address" placeholder="Rua, avenida e número" maxlength="150" required></div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend><span class="fieldset-number">03</span> Localização</legend>
+                    <div class="field-grid location-grid">
+                        <div class="field"><label for="postal-code">CEP <span aria-hidden="true">*</span></label><input id="postal-code" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" pattern="\d{5}-\d{3}" title="Digite o CEP no formato 00000-000." data-mask="cep" required></div>
+                        <div class="field"><label for="city">Cidade <span aria-hidden="true">*</span></label><input id="city" name="cidade" type="text" autocomplete="address-level2" placeholder="Sua cidade" maxlength="80" required></div>
+                        <div class="field"><label for="state">Estado <span aria-hidden="true">*</span></label><select id="state" name="estado" autocomplete="address-level1" required><option value="" selected disabled>Selecione</option><option value="AC">Acre (AC)</option><option value="AL">Alagoas (AL)</option><option value="AP">Amapá (AP)</option><option value="AM">Amazonas (AM)</option><option value="BA">Bahia (BA)</option><option value="CE">Ceará (CE)</option><option value="DF">Distrito Federal (DF)</option><option value="ES">Espírito Santo (ES)</option><option value="GO">Goiás (GO)</option><option value="MA">Maranhão (MA)</option><option value="MT">Mato Grosso (MT)</option><option value="MS">Mato Grosso do Sul (MS)</option><option value="MG">Minas Gerais (MG)</option><option value="PA">Pará (PA)</option><option value="PB">Paraíba (PB)</option><option value="PR">Paraná (PR)</option><option value="PE">Pernambuco (PE)</option><option value="PI">Piauí (PI)</option><option value="RJ">Rio de Janeiro (RJ)</option><option value="RN">Rio Grande do Norte (RN)</option><option value="RS">Rio Grande do Sul (RS)</option><option value="RO">Rondônia (RO)</option><option value="RR">Roraima (RR)</option><option value="SC">Santa Catarina (SC)</option><option value="SP">São Paulo (SP)</option><option value="SE">Sergipe (SE)</option><option value="TO">Tocantins (TO)</option></select></div>
+                    </div>
+                </fieldset>
+
+                <div class="form-submit"><p>Seus dados serão usados apenas para contato sobre as atividades da ONG Raízes.</p><button class="button button-dark" type="submit">Conferir cadastro <span aria-hidden="true">↗</span></button></div>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a><p>Pequenas ações, raízes profundas.</p><span>© 2026 ONG Raízes</span></footer>
+</body>
+</html>
