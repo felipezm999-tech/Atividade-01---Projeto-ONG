@@ -8,56 +8,157 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
     <header class="site-header">
-        <a class="brand" href="index.html" aria-label="ONG Raízes, página inicial"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a>
-        <nav class="site-nav" aria-label="Navegação principal">
-            <a href="index.html">Início</a>
-            <a href="projetos.html" aria-current="page">Projetos sociais</a>
-            <a class="nav-cta" href="cadastro.html">Quero participar <span aria-hidden="true">↗</span></a>
-        </nav>
+        <div class="site-header-inner page-width">
+            <a class="brand" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+                <a href="ONG.html">Início</a>
+                <a href="projetos.html" aria-current="page">Projetos</a>
+                <a href="cadastro.html" class="nav-cta">Quero participar <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="projects-hero page-width" aria-labelledby="projects-title">
-            <div class="projects-heading">
+    <main id="main-content">
+        <section class="project-hero page-width" aria-labelledby="projects-title">
+            <div class="project-hero-copy">
                 <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Ação que nasce no território</p>
-                <h1 id="projects-title">Ideias que criam <em>raízes.</em></h1>
-                <p class="hero-intro">Nossos projetos partem das necessidades de cada comunidade e crescem com a força de quem vive nela.</p>
+                <h1 id="projects-title">Projetos que ajudam a comunidade a crescer <em>juntos.</em></h1>
+                <p>As iniciativas da Raízes são pensadas por pessoas que conhecem cada bairro, sua cultura e suas necessidades. Cada projeto combina cuidado, aprendizado e participação.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="cadastro.html">Quero participar <span aria-hidden="true">↗</span></a>
+                    <a class="button button-light" href="#frentes">Ver frentes de atuação</a>
+                </div>
             </div>
-            <figure class="projects-image">
-                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1400&q=85" alt="Mãos apoiando uma pequena planta, símbolo de cuidado e crescimento coletivo">
+            <figure class="project-hero-visual">
+                <img src="assets/images/projects-hero.jpg" alt="Mãos apoiando uma pequena planta, símbolo de cuidado e crescimento coletivo">
                 <figcaption>O futuro se cultiva em conjunto.</figcaption>
             </figure>
         </section>
 
-        <section class="programs page-width" aria-labelledby="programs-title">
-            <div class="section-label"><span>01</span> Nossas frentes</div>
-            <h2 id="programs-title" class="visually-hidden">Projetos sociais da ONG Raízes</h2>
-            <article class="program-row">
-                <span class="program-number">01</span><div><h3>Aprender em rede</h3><p>Rodas de leitura, acompanhamento escolar e oficinas criativas que ampliam repertórios e fortalecem vínculos entre crianças, famílias e educadores.</p></div><span class="program-symbol" aria-hidden="true">↗</span>
-            </article>
-            <article class="program-row">
-                <span class="program-number">02</span><div><h3>Mesa compartilhada</h3><p>Articulamos cozinhas comunitárias, hortas urbanas e redes locais para apoiar o acesso a alimentos frescos e promover autonomia alimentar.</p></div><span class="program-symbol" aria-hidden="true">✳</span>
-            </article>
-            <article class="program-row">
-                <span class="program-number">03</span><div><h3>Bairro vivo</h3><p>Ações de cuidado com espaços públicos, educação ambiental e plantio coletivo para tornar os bairros mais verdes, saudáveis e acolhedores.</p></div><span class="program-symbol" aria-hidden="true">⌁</span>
-            </article>
+        <section class="focus-section page-width" id="frentes" aria-labelledby="frentes-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Nossas frentes</p>
+                    <h2 id="frentes-title">Três caminhos para transformar a rotina em oportunidade.</h2>
+                </div>
+                <p>Mais do que atividades pontuais, queremos criar experiências duradouras e compartilhadas.</p>
+            </div>
+            <div class="program-grid">
+                <article class="program-card program-card-education">
+                    <div class="card-icon" aria-hidden="true">01</div>
+                    <p class="card-tag">Educação</p>
+                    <h3>Aprender em rede</h3>
+                    <p>Rodas de leitura, acompanhamento escolar e oficinas criativas que ampliam repertórios e fortalecem vínculos entre crianças, famílias e educadores.</p>
+                    <a href="cadastro.html?interesse=voluntariado" class="text-link">Participar dessa frente <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="program-card program-card-food">
+                    <div class="card-icon" aria-hidden="true">02</div>
+                    <p class="card-tag">Alimentação</p>
+                    <h3>Mesa compartilhada</h3>
+                    <p>Cozinhas comunitárias, hortas urbanas e redes locais para apoiar o acesso a alimentos frescos e promover autonomia alimentar.</p>
+                    <a href="cadastro.html?interesse=voluntariado" class="text-link">Participar dessa frente <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="program-card program-card-community">
+                    <div class="card-icon" aria-hidden="true">03</div>
+                    <p class="card-tag">Comunidade</p>
+                    <h3>Bairro vivo</h3>
+                    <p>Ações de cuidado com espaços públicos, educação ambiental e plantio coletivo para tornar os bairros mais verdes, saudáveis e acolhedores.</p>
+                    <a href="cadastro.html?interesse=voluntariado" class="text-link">Participar dessa frente <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
         </section>
 
-        <section class="ways-section" aria-labelledby="ways-title">
-            <div class="ways-inner page-width">
-                <div class="ways-heading"><p class="eyebrow">Toda contribuição faz diferença</p><h2 id="ways-title">Encontre seu jeito de somar.</h2></div>
-                <div class="ways-grid">
-                    <article class="way-item"><span class="way-index">A</span><h3>Seja voluntário</h3><p>Compartilhe seu tempo e suas habilidades nas atividades da comunidade. Cada pessoa pode contribuir de um jeito único.</p><a href="cadastro.html?interesse=voluntariado" class="text-link">Quero ser voluntário <span aria-hidden="true">→</span></a></article>
-                    <article class="way-item"><span class="way-index">B</span><h3>Faça uma doação</h3><p>Contribua com recursos para manter as ações em andamento. Para combinar a melhor forma de apoiar, fale com a nossa equipe.</p><a href="mailto:contato@raizes.org.br?subject=Quero%20fazer%20uma%20doacao" class="text-link">Fale sobre doações <span aria-hidden="true">→</span></a></article>
+        <section class="results-section page-width" aria-labelledby="results-title">
+            <div class="section-heading compact-heading">
+                <div>
+                    <p class="section-kicker">Resultados</p>
+                    <h2 id="results-title">O que uma ação bem acompanhada pode gerar.</h2>
                 </div>
+            </div>
+            <div class="results-grid">
+                <article class="result-card result-card-plain">
+                    <strong>82%</strong>
+                    <p>Das famílias atendidas por oficinas de leitura relataram mais interesse pelas atividades escolares.</p>
+                </article>
+                <article class="result-card result-card-plain">
+                    <strong>4.500 kg</strong>
+                    <p>De alimentos produzidos e distribuídos pela rede de hortas comunitárias.</p>
+                </article>
+                <article class="result-card result-card-plain">
+                    <strong>24</strong>
+                    <p>Espaços públicos revitalizados por moradores e voluntários locais.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="support-section" aria-labelledby="support-title">
+            <div class="page-width support-inner">
+                <div class="support-copy">
+                    <p class="section-kicker">Como apoiar</p>
+                    <h2 id="support-title">Escolha o jeito de somar ao trabalho da Raízes.</h2>
+                    <p>Você pode ajudar com tempo, recursos ou uma conexão que amplie as ações em andamento.</p>
+                </div>
+                <div class="support-options">
+                    <article class="support-option">
+                        <span class="support-number">A</span>
+                        <h3>Seja voluntário</h3>
+                        <p>Compartilhe suas habilidades e acompanhe atividades junto à comunidade.</p>
+                        <a href="cadastro.html?interesse=voluntariado" class="text-link">Quero ser voluntário <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="support-option">
+                        <span class="support-number">B</span>
+                        <h3>Faça uma doação</h3>
+                        <p>Contribua para manter programas, materiais e encontros comunitários.</p>
+                        <a href="mailto:contato@raizes.org.br?subject=Quero%20fazer%20uma%20doacao" class="text-link">Falar sobre doações <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="support-option">
+                        <span class="support-number">C</span>
+                        <h3>Faça uma parceria</h3>
+                        <p>Organizações, escolas e profissionais podem apoiar a atuação local.</p>
+                        <a href="cadastro.html?interesse=parceria" class="text-link">Propor parceria <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section cta-section-narrow">
+            <div class="page-width cta-inner">
+                <div>
+                    <p class="section-kicker section-kicker-light">Vamos construir juntos</p>
+                    <h2>Você encontra o lugar ideal de participar.</h2>
+                </div>
+                <a class="button button-contrast" href="cadastro.html">Preencher cadastro <span aria-hidden="true">↗</span></a>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a><p>Pequenas ações, raízes profundas.</p><span>© 2026 ONG Raízes</span></footer>
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <a class="brand brand-footer" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <nav class="footer-nav" aria-label="Links úteis">
+                <a href="ONG.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="mailto:contato@raizes.org.br">Contato</a>
+            </nav>
+            <p class="footer-copy">Pequenas ações, raízes profundas.</p>
+            <p class="footer-year">© 2026 ONG Raízes</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -4,39 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cadastre-se para conhecer as oportunidades de participação e voluntariado da ONG Raízes.">
-    <title>Cadastro | ONG Raízes</title>
+    <title>Quero participar | ONG Raízes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
     <header class="site-header">
-        <a class="brand" href="index.html" aria-label="ONG Raízes, página inicial"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a>
-        <nav class="site-nav" aria-label="Navegação principal">
-            <a href="index.html">Início</a>
-            <a href="projetos.html">Projetos sociais</a>
-            <a class="nav-cta" href="cadastro.html" aria-current="page">Quero participar <span aria-hidden="true">↗</span></a>
-        </nav>
+        <div class="site-header-inner page-width">
+            <a class="brand" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+                <a href="ONG.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html" class="nav-cta" aria-current="page">Quero participar <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
-    <main class="registration-main">
-        <section class="registration-intro" aria-labelledby="registration-title">
+    <main id="main-content" class="registration-main">
+        <section class="registration-intro page-width" aria-labelledby="registration-title">
+            <div class="registration-copy">
+                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Sua presença importa</p>
+                <h1 id="registration-title">Posso conectar você com a forma certa de ajudar.</h1>
+                <p>Preencha seus dados para receber uma mensagem da equipe Raízes. Você pode participar como voluntário, apoiador, parceiro ou receber notícias sobre projetos.</p>
+                <ul class="registration-benefits" aria-label="O que acontece depois do cadastro">
+                    <li><span aria-hidden="true">✓</span> Você recebe uma resposta em breve.</li>
+                    <li><span aria-hidden="true">✓</span> A equipe identifica a melhor oportunidade.</li>
+                    <li><span aria-hidden="true">✓</span> Seu contato será usado apenas para esse propósito.</li>
+                </ul>
+            </div>
             <figure class="registration-image">
-                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=85" alt="Pessoas reunidas em uma atividade colaborativa">
+                <img src="assets/images/cadastro-hero.jpg" alt="Pessoas reunidas em uma atividade colaborativa">
                 <figcaption>Há muitas formas de fazer parte.</figcaption>
             </figure>
-            <div class="registration-heading">
-                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Vamos nos conhecer</p>
-                <h1 id="registration-title">Sua presença pode <em>mudar histórias.</em></h1>
-                <p>Conte um pouco sobre você. Vamos manter seus dados organizados para dar continuidade à conversa.</p>
+        </section>
+
+        <section class="participation-section page-width" aria-labelledby="participation-title">
+            <div class="section-heading compact-heading">
+                <div>
+                    <p class="section-kicker">Como funciona</p>
+                    <h2 id="participation-title">Escolha o caminho que combina com você.</h2>
+                </div>
+            </div>
+            <div class="participation-grid">
+                <article><span class="participation-icon" aria-hidden="true">01</span><h3>Conectar</h3><p>Receba novidades sobre encontros e atividades da comunidade.</p></article>
+                <article><span class="participation-icon" aria-hidden="true">02</span><h3>Participar</h3><p>Entre em uma ação de voluntariado, oficina ou mobilização local.</p></article>
+                <article><span class="participation-icon" aria-hidden="true">03</span><h3>Apoiar</h3><p>Conheça formas de parceria e contribuição financeira ou material.</p></article>
             </div>
         </section>
 
         <section class="form-section page-width" aria-labelledby="form-title">
-            <div class="form-heading"><div><p class="section-label"><span>01</span> Cadastro de participante</p><h2 id="form-title">Seus dados</h2></div><p>Campos com <span aria-hidden="true">*</span> são obrigatórios.</p></div>
-            <form id="registration-form" class="registration-form">
+            <div class="form-heading">
+                <div>
+                    <p class="section-kicker">Cadastro</p>
+                    <h2 id="form-title">Conte um pouco sobre você.</h2>
+                </div>
+                <p>Campos com <span aria-hidden="true">*</span> são obrigatórios.</p>
+            </div>
+            <form id="registration-form" class="registration-form" novalidate>
                 <fieldset class="form-group">
                     <legend><span class="fieldset-number">01</span> Identificação</legend>
                     <div class="field-grid">
@@ -64,12 +98,44 @@
                     </div>
                 </fieldset>
 
-                <div class="form-submit"><p>Seus dados serão usados apenas para contato sobre as atividades da ONG Raízes.</p><button class="button button-dark" type="submit">Conferir cadastro <span aria-hidden="true">↗</span></button></div>
+                <fieldset class="form-group">
+                    <legend><span class="fieldset-number">04</span> Forma de participação</legend>
+                    <div class="field field-wide">
+                        <label for="interest">Como você deseja apoiar? <span aria-hidden="true">*</span></label>
+                        <select id="interest" name="interesse" required>
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="voluntariado">Quero ser voluntário</option>
+                            <option value="doacao">Quero fazer uma doação</option>
+                            <option value="parceria">Quero fazer uma parceria</option>
+                            <option value="noticias">Quero receber notícias e convites</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div class="form-submit">
+                    <p>Seus dados serão usados apenas para contato sobre as atividades da ONG Raízes.</p>
+                    <button class="button button-dark" type="submit">Conferir cadastro <span aria-hidden="true">↗</span></button>
+                </div>
                 <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
         </section>
     </main>
 
-    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a><p>Pequenas ações, raízes profundas.</p><span>© 2026 ONG Raízes</span></footer>
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <a class="brand brand-footer" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <nav class="footer-nav" aria-label="Links úteis">
+                <a href="ONG.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="mailto:contato@raizes.org.br">Contato</a>
+            </nav>
+            <p class="footer-copy">Pequenas ações, raízes profundas.</p>
+            <p class="footer-year">© 2026 ONG Raízes</p>
+        </div>
+    </footer>
 </body>
 </html>

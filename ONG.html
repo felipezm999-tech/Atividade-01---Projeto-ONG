@@ -8,65 +8,209 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>googleapis
     <header class="site-header">
-        <a class="brand" href="index.html" aria-label="ONG Raízes, página inicial"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a>
-        <nav class="site-nav" aria-label="Navegação principal">
-            <a href="index.html" aria-current="page">Início</a>
-            <a href="projetos.html">Projetos sociais</a>
-            <a class="nav-cta" href="cadastro.html">Quero participar <span aria-hidden="true">↗</span></a>
-        </nav>
+        <div class="site-header-inner page-width">
+            <a class="brand" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+                <a href="ONG.html" aria-current="page">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html" class="nav-cta">Quero participar <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero home-hero" aria-labelledby="hero-title">
+    <main id="main-content">
+        <section class="hero home-hero page-width" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Comunidade que cultiva futuros</p>
                 <h1 id="hero-title">Cuidar do lugar onde vivemos <em>transforma tudo.</em></h1>
-                <p class="hero-intro">A Raízes aproxima pessoas e oportunidades para que cada comunidade possa crescer com dignidade, vínculo e esperança.</p>
+                <p class="hero-intro">A Raízes une pessoas, organizações e vizinhos para criar oportunidades reais, fortalecer vínculos e tornar cada bairro mais saudável e acolhedor.</p>
                 <div class="hero-actions">
-                    <a class="button button-dark" href="projetos.html">Conheça nossos projetos <span aria-hidden="true">↗</span></a>
-                    <a class="text-link" href="cadastro.html">Faça parte <span aria-hidden="true">→</span></a>
+                    <a class="button button-dark" href="cadastro.html">Começar a participar <span aria-hidden="true">↗</span></a>
+                    <a class="button button-light" href="projetos.html">Conhecer os projetos</a>
                 </div>
-                <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span>Presença local, mudança que floresce.</span></div>
+                <div class="hero-proof">
+                    <span class="proof-icon" aria-hidden="true">✦</span>
+                    <span><strong>Local e humano.</strong> Ação feita junto com a comunidade.</span>
+                </div>
             </div>
             <figure class="hero-visual">
-                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=85" alt="Voluntários reunidos em uma atividade comunitária ao ar livre">
-                <figcaption><span>Juntos, no território</span><span class="caption-line" aria-hidden="true"></span></figcaption>
-                <span class="image-stamp" aria-hidden="true">Gente<br>que cuida</span>
+                <img src="assets/images/home-hero.jpg" alt="Mãos de voluntários com as palmas pintadas de vermelho, reunidas em círculo">
+                <figcaption class="image-caption">
+                    <span class="caption-label">Atividades em comunidade</span>
+                    <strong>Mais perto de quem vive o bairro.</strong>
+                </figcaption>
             </figure>
         </section>
 
         <section class="impact-band" aria-label="Áreas de atuação">
-            <p>Nosso trabalho começa com escuta e cresce com ação.</p>
-            <ul><li>Educação</li><li>Alimentação</li><li>Meio ambiente</li><li>Fortalecimento comunitário</li></ul>
+            <div class="impact-band-inner page-width">
+                <p>Trabalhamos em quatro frentes que nascem das demandas reais do território.</p>
+                <ul>
+                    <li>Educação</li>
+                    <li>Alimentação</li>
+                    <li>Meio ambiente</li>
+                    <li>Comunidade</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="intro-section page-width" aria-labelledby="about-title">
-            <div class="section-label"><span>01</span> Quem somos</div>
-            <div class="intro-content">
-                <h2 id="about-title">Uma rede feita de encontros, cuidado e ação.</h2>
-                <div class="intro-detail">
-                    <p>A ONG Raízes é uma organização sem fins lucrativos que atua lado a lado com comunidades. Acreditamos que soluções duradouras nascem quando as pessoas participam das decisões e têm acesso a oportunidades.</p>
-                    <a class="text-link" href="projetos.html">Veja o que fazemos <span aria-hidden="true">→</span></a>
+        <section class="experience-section" aria-labelledby="experience-title">
+            <div class="experience-intro page-width">
+                <p class="section-kicker">A experiência de participar</p>
+                <h2 id="experience-title">Uma jornada simples, humana e cheia de presença.</h2>
+            </div>
+            <div class="experience-scroll">
+                <div class="experience-sticky page-width">
+                    <div class="experience-copy" aria-live="polite">
+                        <div class="experience-copy-item is-active" data-experience="0">
+                            <span class="experience-number">01</span>
+                            <h3>Você encontra o projeto certo para você.</h3>
+                            <p>Explore as iniciativas, entenda cada papel e escolha a forma de apoiar com liberdade.</p>
+                        </div>
+                        <div class="experience-copy-item" data-experience="1">
+                            <span class="experience-number">02</span>
+                            <h3>O cuidado começa com uma conversa.</h3>
+                            <p>O cadastro conecta você à equipe, que identifica oportunidades alinhadas à sua disponibilidade.</p>
+                        </div>
+                        <div class="experience-copy-item" data-experience="2">
+                            <span class="experience-number">03</span>
+                            <h3>Você transforma o bairro junto com a comunidade.</h3>
+                            <p>Participe de oficinas, ações locais e novas conexões que realmente fazem diferença.</p>
+                        </div>
+                        <a class="button button-dark experience-cta" href="cadastro.html">Quero participar <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="experience-visual" aria-label="Etapas da participação na ONG">
+                        <article class="experience-visual-item is-active" data-experience="0">
+                            <img src="assets/images/projects-hero.jpg" alt="Uma pessoa apoiando uma planta em um projeto comunitário">
+                            <div class="experience-card">
+                                <span>01 — Conhecer</span>
+                                <strong>Encontre uma forma de ajudar.</strong>
+                            </div>
+                        </article>
+                        <article class="experience-visual-item" data-experience="1">
+                            <img src="assets/images/cadastro-hero.jpg" alt="Pessoas reunidas em uma atividade comunitária">
+                            <div class="experience-card">
+                                <span>02 — Conectar</span>
+                                <strong>Fale com a equipe Raízes.</strong>
+                            </div>
+                        </article>
+                        <article class="experience-visual-item" data-experience="2">
+                            <img src="assets/images/home-hero.jpg" alt="Voluntários reunidos em uma atividade comunitária ao ar livre">
+                            <div class="experience-card">
+                                <span>03 — Participar</span>
+                                <strong>Faça parte da transformação.</strong>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" aria-labelledby="contact-title">
-            <div class="contact-inner page-width">
-                <div><p class="eyebrow">Uma conversa pode ser o começo</p><h2 id="contact-title">Vamos construir algo bom, juntos?</h2></div>
-                <address class="contact-details">
-                    <a href="mailto:contato@raizes.org.br">contato@raizes.org.br</a>
-                    <a href="tel:+551140001234">(11) 4000-1234</a>
-                    <span>São Paulo, SP</span>
-                </address>
+        <section class="story-section page-width" aria-labelledby="story-title">
+            <div class="story-intro">
+                <p class="section-kicker">Quem somos</p>
+                <h2 id="story-title">Uma organização que cresce quando a comunidade participa.</h2>
+            </div>
+            <div class="story-layout">
+                <div class="story-copy">
+                    <p>A ONG Raízes é um espaço de escuta, colaboração e ação. Nossa missão é ajudar pessoas e territórios a desenvolverem soluções que fortaleçam dignidade, pertencimento e oportunidades.</p>
+                    <p>Nosso trabalho começa com conversas, encontros e reconhecimento das necessidades locais. Depois, conectamos moradores, parceiros e recursos para transformar ideias em ações concretas.</p>
+                    <a class="text-link" href="projetos.html">Entenda como trabalhamos <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="story-aside">
+                    <span class="aside-number">01</span>
+                    <p>Escuta o que a comunidade precisa.</p>
+                    <span class="aside-number">02</span>
+                    <p>Conecta pessoas, saberes e oportunidades.</p>
+                    <span class="aside-number">03</span>
+                    <p>Transforma cada encontro em uma ação sustentável.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section page-width" aria-labelledby="results-title">
+            <div class="results-heading">
+                <div>
+                    <p class="section-kicker">Resultado em movimento</p>
+                    <h2 id="results-title">Ações com presença local e impacto compartilhado.</h2>
+                </div>
+                <a class="text-link" href="cadastro.html">Faça parte <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="results-grid">
+                <article class="result-card">
+                    <strong>1.200+</strong>
+                    <span>Pessoas impactadas</span>
+                    <p>Por ações educativas, alimentares e de cuidado com espaços públicos.</p>
+                </article>
+                <article class="result-card">
+                    <strong>48</strong>
+                    <span>Voluntários ativos</span>
+                    <p>Que oferecem tempo, conhecimento e presença em projetos da comunidade.</p>
+                </article>
+                <article class="result-card">
+                    <strong>18</strong>
+                    <span>Parcerias locais</span>
+                    <p>Com escolas, cozinhas e organizações que ampliam cada iniciativa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="page-width process-inner">
+                <div class="process-copy">
+                    <p class="section-kicker">Como trabalhamos</p>
+                    <h2 id="process-title">Cada projeto começa com uma conversa e termina com uma comunidade mais forte.</h2>
+                    <a class="button button-dark" href="projetos.html">Ver todas as frentes <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="process-steps">
+                    <article><span>01</span><h3>Escuta</h3><p>Entendemos as necessidades reais do território.</p></article>
+                    <article><span>02</span><h3>Planejamento</h3><p>Articulamos ideias e recursos com parceiros locais.</p></article>
+                    <article><span>03</span><h3>Ação</h3><p>Transformamos a proposta em experiências compartilhadas.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="page-width cta-inner">
+                <div>
+                    <p class="section-kicker section-kicker-light">Uma conversa pode ser o começo</p>
+                    <h2>Você também pode ajudar a plantar o próximo projeto.</h2>
+                </div>
+                <div class="cta-actions">
+                    <a class="button button-contrast" href="cadastro.html">Quero participar <span aria-hidden="true">↗</span></a>
+                    <a class="contact-link" href="mailto:contato@raizes.org.br">contato@raizes.org.br</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>ONG <strong>Raízes</strong></span></a><p>Pequenas ações, raízes profundas.</p><span>© 2026 ONG Raízes</span></footer>
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <a class="brand brand-footer" href="ONG.html" aria-label="ONG Raízes, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span class="brand-word">ONG <strong>Raízes</strong></span>
+            </a>
+            <nav class="footer-nav" aria-label="Links úteis">
+                <a href="ONG.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="mailto:contato@raizes.org.br">Contato</a>
+            </nav>
+            <p class="footer-copy">Pequenas ações, raízes profundas.</p>
+            <p class="footer-year">© 2026 ONG Raízes</p>
+        </div>
+    </footer>
 </body>
 </html>
